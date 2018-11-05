@@ -30,7 +30,7 @@ def photudl(message):
     with open(file_name, 'wb') as new_file:
         new_file.write(download)
     distort(file_name)
-    photo = open('file_name, 'rb')
+    photo = open(file_name, 'rb')
     bot.send_photo(message.chat.id, photo)
     os.remove(file_name)
 	
